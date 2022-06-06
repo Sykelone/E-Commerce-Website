@@ -3,10 +3,10 @@ const app = express();
 
 app.use(express.json())
 
-const { application } = require("express");
 
 //Route Imports
-const route = require("./routes/productRoute");
+const product = require("./routes/productRoute");
+app.use("/api/v1",product);
 
 
 
